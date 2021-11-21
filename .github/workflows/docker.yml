@@ -16,3 +16,5 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
           repository: tuxuser/lg-webos-ndk
           tags: latest
+          cache-from: type=registry,ref=tuxuser/lg-webos-ndk:latest
+          cache-to: type=inline
