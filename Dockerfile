@@ -18,6 +18,6 @@ RUN apt-get update -qq \
 RUN npm install -g @webosose/ares-cli
 
 RUN apt-get update -qq \
-	&& apt-get install --no-install-recommends -y cmake pkg-config \
+	&& apt-get install --no-install-recommends -y cmake pkg-config git \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
