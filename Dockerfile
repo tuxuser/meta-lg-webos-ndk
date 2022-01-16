@@ -5,7 +5,7 @@ RUN apt-get update -qq \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN wget -q https://github.com/webosbrew/meta-lg-webos-ndk/releases/download/1.0.g-rev.4/webos-sdk-x86_64-armv7a-neon-toolchain-1.0.g.sh -P /tmp/ \
+RUN wget -q https://github.com/webosbrew/meta-lg-webos-ndk/releases/download/1.0.g-rev.5/webos-sdk-x86_64-armv7a-neon-toolchain-1.0.g.sh -P /tmp/ \
 	&& chmod 755 /tmp/webos-sdk-x86_64-armv7a-neon-toolchain-1.0.g.sh \
 	&& /tmp/webos-sdk-x86_64-armv7a-neon-toolchain-1.0.g.sh -y \
 	&& rm /tmp/webos-sdk-x86_64-armv7a-neon-toolchain-1.0.g.sh
